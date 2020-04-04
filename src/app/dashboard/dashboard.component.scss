@@ -1,0 +1,64 @@
+.header {
+  background: url(/assets/images/header.png) no-repeat #132e46;
+  height: 80vh;
+  background-position: right;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 30% 1fr;
+  padding: 0px 50px;
+
+  .menu {
+    display: flex;
+    button {
+      color: white;
+      height: 60px;
+
+      &.portal {
+        color: #132e46;
+        background: #fbbd34;
+        border-radius: 40px;
+        margin: 10px;
+        height: 40px;
+      }
+    }
+  }
+
+  .text {
+    margin-left: 80px;
+    color: white;
+    width: 60%;
+
+    h1 {
+      font-weight: bold;
+      font-size: 80px;
+      line-height: 80px;
+      margin-bottom: 40px;
+    }
+
+    .description {
+      font-size: 20px;
+      line-height: 40px;
+    }
+
+    span {
+      color: #fbbd34;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      margin-top: 40px;
+      gap: 40px;
+
+      button {
+        border: #fbbd34 solid 1px;
+        border-radius: 40px;
+        width: 300px;
+        font-size: 30px;
+        line-height: 70px;
+        color: #fbbd34;
+      }
+    }
+  }
+}
